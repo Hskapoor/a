@@ -1,0 +1,8 @@
+print("Enter Principal Amount")
+principal=int(input())
+print("Enter Duration of Fd")
+time=int(input())
+print("Enter ROI")
+roi=int(input())
+a=principal*(pow(((1+roi)/100),time))
+print(a)
