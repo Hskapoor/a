@@ -1,14 +1,9 @@
-list=[]
+def fact(n):
+    if (n==1 or n==0):
+        return 1
+    else:
+        return n*fact(n-1)
 
-def myfunction(inp):
-    list.append(inp)
-    
+n=int(input("Enter no to get factorial"))
+print(fact(n))
 
-print("How many Items in List")
-n=int(input())
-print("Add Items in List")
-for i in range(0,n):
-    inp=input()
-    myfunction(inp)
-
-print(list)
